@@ -1,38 +1,148 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/***************************** Navigation bar Code below utill the next comment meet ************************/
+  /*Navigation bar Code below utill the next comment meet*/
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    box-shadow: 1px 5px 25px rgb(197, 197, 197);
+    padding: 0 0 0 20px !important;
+  }
+  
+  .logo_items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo_items img{
+    width: 64px;
+    height: 64px;
+  }
+  .logo_items a{
+    padding: 0 20px;
+    border-right:1px solid black;
+    font-size: 1.2rem;
+    margin: 0 0 0 20px;
+  }
+  .logo_items a:last-child{
+    border-right:none;
+  }
+  .profile_nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    height: 100%;
+    background-color: #00A4AD;
+    border-bottom-left-radius: 30px;
+  }
+  .profile_nav p{
+    padding: 0 30px 0 0;
+  }
+  .profile_nav img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+
+/*====================================DOCTOR PAGE SECTION===============================================*/
+/*************************************************** image portion ******************************************/
+.Container{
+  box-sizing: border-box;
+  padding: 20px 0;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  background-color: #00a4ad09 ;
+  box-shadow: inset 0 -3px 1px 1.5px rgba(104, 104, 104, 0.781);
+}
+
+.Image_portion{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Image_portion img{
+  border-radius: 50%;
+  border:5px solid #00A4AD ;
+  width: 225px;
+  height: 225px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.doctor-description{
+  border-right: 1px solid rgba(122, 122, 122, 0.835);
+  padding: 0 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*================================================main container============================================*/
+main{
+  text-align: center;
+  padding:10px 0 0 0;
+}
+
+.month_year{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.month_year table tr td:nth-child(2){
+  width: 100px;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+/**************************************** month date day select portion *************************************/
+
+.date_select{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 1700px;
+  margin: 15px auto 0 auto; 
+  text-align: center;
+}
+.date_select .month_date_day{
+  width: 100%;
+  margin:0 5px;
+  border-radius:5px;
+  overflow: hidden;
+  background-color: #ffad50;
+  opacity: 0.5;
+  color: black;
+  text-decoration: none;
+  cursor:pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.date_select .month_date_day_middle{
+  width: 220px;
+  height:90px ;
+  background-color: #ffAC50;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*********************************************** Timing section **********************************************/
+.timing_table{
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.timing_table tr{
+  
 }
